@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legado de Simón Bolívar: Vida y Obra</title>
+    <style>
+        /* Estilos generales (sin cambios) */
+        :root {
+            --color-primario: #003366; /* Azul oscuro */
+            --color-secundario: #FFCC00; /* Amarillo */
+            --color-texto: #333;
+            --color-fondo: #f4f4f4;
+            --color-blanco: #ffffff;
+        }
+
+        body {
+            font-family: 'Segoe UI', 'Helvetica', 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--color-fondo);
+            color: var(--color-texto);
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 85%;
+            max-width: 1100px;
+            margin: auto;
+            overflow: hidden;
+            padding: 0 20px;
+        }
+
+        /* Encabezado y Navegación (sin cambios) */
+        header {
+            background: var(--color-primario);
+            color: var(--color-blanco);
+            padding: 1rem 0;
+            text-align: center;
+            border-bottom: 5px solid var(--color-secundario);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            letter-spacing: 2px;
+        }
+
+        nav {
+            background: #444;
+            padding: 0.8rem;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        nav ul li {
+            margin: 5px 15px;
+        }
+
+        nav ul li a {
+            color: var(--color-blanco);
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1rem;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: var(--color-secundario);
+        }
+
+        /* Secciones */
+        .section {
+            padding: 40px 20px;
+            margin-bottom: 20px;
+            background: var(--color-blanco);
+            border-left: 5px solid var(--color-primario);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Centrar contenido por defecto */
+        }
+
+        .section h2 {
+            color: var(--color-primario);
+            font-size: 2rem;
+            margin-top: 0;
+            border-bottom: 2px solid var(--color-fondo);
+            padding-bottom: 10px;
+            width: 100%;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        .section-content {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: space-around; /* Distribuir elementos */
+            align-items: flex-start;
+        }
+
+        .section-text {
+            flex: 2;
+            min-width: 300px;
+        }
+
+        .section-image {
+            flex: 1;
+            min-width: 200px;
+            max-width: 350px;
+            border: 1px solid #ddd;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        .section-image img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+        h3 {
+            color: var(--color-primario);
+            font-size: 1.5rem;
+        }
+
+        blockquote {
+            background: var(--color-fondo);
+            border-left: 5px solid var(--color-secundario);
+            margin: 20px 0;
+            padding: 15px 20px;
+            font-style: italic;
+            font-size: 1.1rem;
+        }
+
+        /* Pie de página (sin cambios) */
+        footer {
+            background: var(--color-primario);
+            color: var(--color-blanco);
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        /* Diseño Responsivo */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .container {
+                width: 95%;
+            }
+
+            .section-content {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .section-image {
+                max-width: 80%;
+                margin-bottom: 15px;
+            }
+
+            .section-text {
+                min-width: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Legado de Simón Bolívar</h1>
+            <p>Un Viaje por su Pensamiento, Obra y Memoria</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#carta-jamaica">Carta de Jamaica</a></li>
+            <li><a href="#traslado-restos">Traslado de sus Restos</a></li>
+            <li><a href="#maestros">Influencia de sus Maestros</a></li>
+            <li><a href="#proclamas">Proclamas de Guerra</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+
+        <section id="carta-jamaica" class="section">
+            <h2>1. Carta de Jamaica: Visión y Profecía</h2>
+            <div class="section-content">
+                <div class="section-text">
+                    <p>La <strong>Carta de Jamaica</strong>, firmada el 6 de septiembre de 1815 en Kingston, es una pieza fundamental del pensamiento bolivariano. Escrita durante su exilio, Bolívar no solo buscaba apoyo para la causa independentista, sino que también realizaba un profundo análisis de la realidad hispanoamericana. En ella, desglosa las causas de la rebelión, critica los tres siglos de yugo español y traza una visión profética sobre el futuro de las nuevas naciones, anticipando sus desafíos y formas de gobierno.</p>
+                    <p>El documento es, sobre todo, un vibrante llamado a la <strong>unidad continental</strong>. Bolívar argumenta que solo una confederación de repúblicas americanas podría asegurar la libertad recién conquistada frente a las potencias externas y garantizar la prosperidad mutua. Este ideal de la "Patria Grande" se convirtió en la piedra angular de su proyecto político.</p>
+                    <blockquote>
+                        "Yo deseo más que otro alguno ver formar en América la más grande nación del mundo, menos por su extensión y riquezas que por su libertad y gloria."
+                    </blockquote>
+                </div>
+                <div class="section-image">
+                    <img src="carta_jamaica.jpg" alt="Imagen de la Carta de Jamaica">
+                </div>
+            </div>
+        </section>
+
+        <section id="traslado-restos" class="section">
+            <h2>2. El Retorno a la Patria: Traslado de sus Restos</h2>
+            <div class="section-content">
+                <div class="section-text">
+                    <p>Aunque Simón Bolívar falleció en Santa Marta, Colombia, el 17 de diciembre de 1830, su deseo siempre fue descansar en su natal Caracas. Tuvieron que pasar doce años para que este anhelo se cumpliera. En 1842, bajo la presidencia de José Antonio Páez, se organizó el solemne traslado de sus restos a Venezuela.</p>
+                    <p>Este evento fue mucho más que un acto fúnebre; se convirtió en un poderoso símbolo de <strong>reconciliación y unidad nacional</strong>. El regreso del Libertador sirvió para consolidar su figura como el padre de la patria, uniendo a los venezolanos en torno a su legado. Sus restos fueron recibidos con magnos honores y depositados en la Catedral de Caracas, para luego ser trasladados en 1876 al <strong>Panteón Nacional</strong>, donde reposan hoy como el más sagrado tesoro de la nación.</p>
+                </div>
+                <div class="section-image">
+                    <img src="traslado_bolivar.jpg" alt="Imagen del traslado de los restos de Bolívar">
+                </div>
+            </div>
+        </section>
+
+        <section id="maestros" class="section">
+            <h2>3. Forjadores de un Libertador: La Influencia de sus Maestros</h2>
+            <div class="section-content">
+                <div class="section-text">
+                    <h3>Simón Rodríguez: El Maestro de la Libertad</h3>
+                    <p>Fue su mentor más influyente. Con sus ideas pedagógicas avanzadas, basadas en la Ilustración y el pensamiento de Rousseau, Rodríguez le inculcó a Bolívar un amor indeleble por la libertad, la justicia y el conocimiento práctico. Le enseñó a pensar de forma crítica, a cuestionar la autoridad y a basar el aprendizaje en la experiencia. La famosa frase de Rodríguez, "O inventamos o erramos", resume la filosofía que transmitió a su pupilo: la necesidad de crear soluciones originales para los problemas de América.</p>
+                    <div class="section-image" style="margin-top: 15px;">
+                        <img src="simon_rodriguez.jpg" alt="Retrato de Simón Rodríguez">
+                    </div>
+                    <h3>Andrés Bello: El Humanista</h3>
+                    <p>Bello, uno de los intelectuales más importantes de América, le proporcionó a Bolívar una sólida formación en humanidades, derecho, historia y letras. Su vasta cultura y su rigor intelectual dotaron al Libertador de las herramientas necesarias para formular sus proyectos constitucionales, redactar sus célebres documentos y defender la causa independentista con argumentos sólidos y elocuentes en el escenario mundial.</p>
+                    <div class="section-image" style="margin-top: 15px;">
+                        <img src="andres_bello.jpg" alt="Retrato de Andrés Bello">
+                    </div>
+                </div>
+                <div style="flex: 1; min-width: 200px; max-width: 350px;"></div>
+            </div>
+        </section>
+
+        <section id="proclamas" class="section">
+            <h2>4. La Palabra como Arma: Proclamas de Guerra</h2>
+            <div class="section-content">
+                <div class="section-text">
+                    <h3>Manifiesto de Cartagena y Proclama de Guerra a Muerte</h3>
+                    <p>Tras la caída de la Primera República, Bolívar redactó el <strong>Manifiesto de Cartagena</strong> (1812) para analizar las causas del fracaso. Poco después, en Trujillo, el 15 de junio de 1813, emitió el <strong>Decreto de Guerra a Muerte</strong>. Esta fue una medida radical y terrible, pero considerada necesaria por Bolívar para transformar la guerra civil en una guerra internacional, forzando a la población a tomar partido y respondiendo a las crueldades del ejército realista. La frase "Españoles y canarios, contad con la muerte, aun siendo indiferentes... Americanos, contad con la vida, aun cuando seáis culpables" marcó el período más sangriento del conflicto.</p>
+                    <div class="section-image" style="margin-top: 15px;">
+                        <img src="guerra_a_muerte.jpg" alt="Imagen alusiva a la Guerra a Muerte">
+                    </div>
+                    <h3>Manifiesto de Carúpano</h3>
+                    <p>Escrito el 7 de septiembre de 1814, tras el colapso de la Segunda República, este manifiesto es un ejercicio de honestidad y autocrítica. En lugar de culpar a otros, Bolívar señala las debilidades internas de la propia sociedad venezolana —la falta de virtud republicana, la desunión y la anarquía— como las verdaderas causas de la derrota. Es una profunda reflexión sobre la necesidad de forjar ciudadanos a través de la educación y la moral para que la libertad pudiera sostenerse.</p>
+                    <div class="section-image" style="margin-top: 15px;">
+                        <img src="manifiesto_carupano.jpg" alt="Imagen alusiva al Manifiesto de Carúpano">
+                    </div>
+                </div>
+                <div style="flex: 1; min-width: 200px; max-width: 350px;"></div>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>Página web informativa creada en 2024. Un homenaje a la vida y obra del Libertador Simón Bolívar.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
